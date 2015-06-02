@@ -16,11 +16,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ut, incidunt
 + Moqups.com - Wireframes
 
 ##Trello Board
-<a href="https://trello.com/b/PsdLDChK/project-4-fruit-cart-finder">Fruit Cart Finder Trello</a>
+<a href="https://trello.com/b/PsdLDChK/project-4-fruit-cart-finder" target="_blank">Fruit Cart Finder Trello</a>
 
 ##Artifacts
 ###Wireframes
 
 ###ERD
+<img src="./images/Fruit_Cart_Finder_ERD.png">
 
 ###Tables
