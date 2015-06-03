@@ -20,11 +20,34 @@ Access to fresh fruits as healthy alternatives can be hard to find in a city ful
 
 ##Artifacts
 ###Wireframes
-<img src="./images/wireframes/index.png"><br /><br /><br />
-<img src="./images/wireframes/signin.png"><br /><br /><br />
-<img src="./images/wireframes/signup.png"><br /><br /><br />
-<img src="./images/wireframes/carts.png"><br /><br /><br />
-<img src="./images/wireframes/new.png"><br /><br /><br />
+|Guest Home|Sign In|Sign Up|
+|---|---|---|
+|<img src="./images/wireframes/index.png">|<img src="./images/wireframes/signin.png">|<img src="./images/wireframes/signup.png">|
+|Users home|Add Cart|
+|---|---|
+|<img src="./images/wireframes/carts.png">|<img src="./images/wireframes/new.png">|
+
+###Routes
+|HTTP Verb|Route|Description|
+|---|---|---|
+|GET|(' / ')|Home route to the guest page|
+|GET|('/signin')|Sign in page|
+|GET|('/signup')|Sign up page|
+
+#####Users
+|HTTP Verb|Route|Description|
+|---|---|---|
+|GET|('/users/id/carts/new/')|Goes to the add cart page|
+|GET|('/users/id/carts')|Takes the user to their carts page|
+|POST|('/users/new')|Creates a new fruit finder account|
+
+#####Carts
+|HTTP Verb|Route|Description|
+|---|---|---|
+|POST|('/carts/')|Creates a cart entry|
+|PUT|('/carts/id')|Updates a cart entry|
+|DELETE|('/carts/id')|Destroys a cart entry|
+
 ###ERD
 <img src="./images/Fruit_Cart_Finder_ERD-2.png">
 
