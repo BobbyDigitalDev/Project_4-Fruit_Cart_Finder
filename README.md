@@ -23,6 +23,7 @@ Access to fresh fruits as healthy alternatives can be hard to find in a city ful
 |Guest Home|Sign In|Sign Up|
 |---|---|---|
 |<img src="./images/wireframes/index.png">|<img src="./images/wireframes/signin.png">|<img src="./images/wireframes/signup.png">|
+
 |Users home|Add Cart|
 |---|---|
 |<img src="./images/wireframes/carts.png">|<img src="./images/wireframes/new.png">|
