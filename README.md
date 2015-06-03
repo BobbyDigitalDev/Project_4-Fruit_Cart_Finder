@@ -13,7 +13,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ut, incidunt
 + Postgresql - Database
 + HTML & CSS
 + Draw.io - ERD
-+ Moqups.com - Wireframes
++ Balsamiq - Wireframes
 
 ##Trello Board
 <a href="https://trello.com/b/PsdLDChK/project-4-fruit-cart-finder" target="_blank">Fruit Cart Finder Trello</a>
@@ -22,6 +22,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ut, incidunt
 ###Wireframes
 
 ###ERD
-<img src="./images/Fruit_Cart_Finder_ERD.png">
+<img src="./images/Fruit_Cart_Finder_ERD-2.png">
 
 ###Tables
