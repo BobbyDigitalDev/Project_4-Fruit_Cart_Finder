@@ -3,9 +3,9 @@
 ##Application Description
 
 ###Fruit Cart Finder
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure incidunt atque quas quidem aspernatur. Laborum sed enim, magni consequatur expedita delectus quasi cupiditate omnis? Dolores itaque modi repellat deleniti nemo.
+Finding healthy snacks can be tough proposition these days. Sodas, chips and candy bars call out to us from every direction. Obesity, diabetes and heart disorders are on the rise. Humans are programmed to seek out sugars, fats and high calorie foods because of their relative scarcity in nature. Modern humans need an old school solution...natural foods.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ut, incidunt obcaecati. Iure et, quod esse dolore? Perferendis, animi ut quis ea laborum mollitia, ducimus aut. Nemo quisquam dolorem veniam?
+Access to fresh fruits as healthy alternatives can be tricky to locate in a city full of hotdog carts and halal trucks. The Fruit Cart Finder solves that problem. Finding a local fruit merchant is as simple as finding your location on a map and checking which vendor is closest to you. Have a favorite fruit cart? Simply sign up for a free fruit cart finder account and add them to the database for others to discover and enjoy.
 
 ##Technology Used
 + Ruby on Rails
@@ -25,3 +25,17 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ut, incidunt
 <img src="./images/Fruit_Cart_Finder_ERD-2.png">
 
 ###Tables
+
+#### Users Table
+|id   |name| email  |password_digest   |
+|---|---|---|---|
+| 1  |Johnny Appleseed| Japple@gmail.com  |apple   |
+| 2  |Anna Bannana| Abannana@gmail.com  | bannana  |
+| 3  | Manny Mango| Mmango@gmail.com  | mango |
+
+
+#### Carts Table
+|id|description|lat|lon|address|city|state|zip|user_id|
+|:-:||---|---|---|---|---|---|---|:-:|
+|1|My fav in the whole area. super friendly  vendor.|40.755313|-73.973238|517 Lexington Ave|N.Y.|N.Y.|10017|1|
+|1|Always fresh. This guy is great.|40.768057|-73.985571|363 W 57th|N.Y.|N.Y.|10019|2|
