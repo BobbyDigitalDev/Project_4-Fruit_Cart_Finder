@@ -1,0 +1,15 @@
+<h1>you hit the new page</h1>
+
+<% if @message %>
+  <h3> <%= @message %> </h3>
+<% end %>
+
+<%= form_tag "/sessions" do%>
+  <%= label_tag :email %>
+  <%= email_field_tag :email %>
+  <%= label_tag :password %>
+  <%= password_field_tag :password %>
+
+  <%= submit_tag "Log in"%>
+
+<% end %>
