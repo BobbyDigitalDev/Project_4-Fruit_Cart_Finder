@@ -10,3 +10,9 @@
 User.delete_all
 User.create({name: "Leslie Knope", email: "les@knope2015.com", password_digest: "waffles"})
 User.create({name: "Tom Haverford", email: "tommy@e720.com", password_digest: "treatyoself"})
+
+# State.delete_all
+# records = JSON.parse(File.read('./states.json'))
+# records.each do |record|
+#   State.create!(record)
+# end
