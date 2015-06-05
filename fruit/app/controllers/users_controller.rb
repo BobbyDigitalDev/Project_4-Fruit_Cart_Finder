@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   end
 
   def create
+    @user = User.new
     @user.name = params[:name]
     @user.email = params[:email]
     @user.password = params[:password]
@@ -28,8 +29,4 @@ class UsersController < ApplicationController
 
   def edit
   end
-
-
-
-
 end
