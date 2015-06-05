@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   # root 'sessions#new'
+
+  post '/search' => 'welcome#search'
+
   resources :users
 
   resources :sessions, only: [:new, :create, :destroy]

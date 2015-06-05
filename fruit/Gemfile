@@ -30,6 +30,10 @@ gem 'pry-rails'
 
 gem 'geocoder'
 
+gem 'slim'
+
+gem 'yelp'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
