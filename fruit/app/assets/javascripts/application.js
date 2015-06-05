@@ -16,8 +16,8 @@
 //= require_tree .
 
 var markersArray = [];
-var SF_LAT = 37.7435841;
-var SF_LNG = -122.4897851;
+var NY_LAT = 40.735189;
+var NY_LNG = -73.991829;
 var QUERY_DELAY = 400;
 var inactive = false;
 
@@ -32,8 +32,8 @@ $(document).ready(function() {
 var initialize = function() {
   // Define some options for the map
   var mapOptions = {
-    center: new google.maps.LatLng(SF_LAT, SF_LNG),
-    zoom: 12,
+    center: new google.maps.LatLng(NY_LAT, NY_LNG),
+    zoom: 16,
 
     // hide controls
     panControl: true,
@@ -50,7 +50,7 @@ var initialize = function() {
   // create a new Google map with the options in the map element
   var map = new google.maps.Map($('#map')[0], mapOptions);
 
-  bind_controls(map);
+  // bind_controls(map);
 }
 
 /**

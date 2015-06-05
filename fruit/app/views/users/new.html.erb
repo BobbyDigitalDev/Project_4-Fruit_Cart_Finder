@@ -1,32 +1,34 @@
-<center>
+<div class="centertext">
+  <center>
 
-  <%if @message %>
-  <h3><%= @message %></h3>
-  <% end %>
+    <%if @message %>
+    <h3><%= @message %></h3>
+    <% end %>
 
-  <p>Sign up for a Fruit Finder account and start adding your favorite fresh fruit and smoothie vendors today!</p>
+    <h2>Sign up for a Fruit Finder account and start adding your favorite fresh fruit and smoothie vendors today!</h2>
 
-  <% if @user.errors.count > 0 %>
-    <p><%= @user.errors.full_messages%></p>
-  <% end %>
+    <% if @user.errors.count > 0 %>
+      <p><%= @user.errors.full_messages%></p>
+    <% end %>
 
-  <%= form_tag "/users", method: 'post' do %>
-    <%= label_tag "name:" %>
-    <%= text_field_tag :name%><br />
-    <br />
-    <%= label_tag "email:" %>
-    <%= email_field_tag :email %> <br />
-    <br />
-    <%=label_tag "password:" %>
-    <%= password_field_tag :password %><br />
-    <br />
-    <%=label_tag "retype password:" %>
-    <%= password_field_tag :password_confirmation %>
-    <br />
-    <br />
-    <%= submit_tag "Create Acccount" %>
-    <br />
-  <% end %>
-
-</center>
+    <%= form_tag "/users", method: 'post' do %>
+      <%= label_tag "name:" %>
+      <%= text_field_tag :name%><br />
+      <br />
+      <%= label_tag "email:" %>
+      <%= email_field_tag :email %> <br />
+      <br />
+      <%=label_tag "password:" %>
+      <%= password_field_tag :password %><br />
+      <br />
+      <%=label_tag "retype password:" %>
+      <%= password_field_tag :password_confirmation %>
+      <br />
+      <br />
+      <%= submit_tag "Create Acccount" %>
+      <br />
+    <% end %>
+    
+  </center>
+</div>
 

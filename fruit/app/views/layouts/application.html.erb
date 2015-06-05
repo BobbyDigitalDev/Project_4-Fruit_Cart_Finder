@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Fruit</title>
+  <title>Welcome to the Fruit Cart Finder</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyDiFShAXWc6FLDvd4QpOCHBTIMDD1PAJTU&sensor=true" %>
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAlHk9Jd5VRwhdBEFg8X4HgWXt3b0p15Pc&sensor=true" %>
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlHk9Jd5VRwhdBEFg8X4HgWXt3b0p15Pc&sensor=false"></script> -->
   <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
 
 
 </head>
 <body>
+<div class="right"><%= link_to "Log In", {:controller => 'sessions', :action => 'new'}%> | 
+<%= link_to "Log In", {:controller => 'users', :action => 'new'}%>
+
+</div>
+
+<div class="logocentered">
+<%= image_tag "FruitFinder-logo.png", size: "300x135", alt: "Fruit Cart Finder Logo" %>
+
+</div>
 
 <%= yield %>
 
