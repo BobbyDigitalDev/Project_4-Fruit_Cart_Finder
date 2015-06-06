@@ -27,28 +27,44 @@ html, body {
 /* #typography
 ================================================== */
 h1 {font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 1.75em; font-weight: 700;}
-h2 {font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 1.5em; font-weight: 400;}
-h3 {font-family: 'Lato', Georgia, "Times New Roman", Times, serif;font-size: 3em;}
+h2 {font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 1.5em; font-weight: 400;  margin-top: 1%;}
+h3 {font-family: 'Lato', Georgia, "Times New Roman", Times, serif;font-size: 1.5em;font-weight: 100}
 h4 {}
 .tcenter {text-align: center;}
 
 .logocentered {
-  width: 300px; 
-  /*height: 128px;*/ 
+  /*width: 300px; */
+  width: 33%; 
   margin: 0 auto;
   padding-bottom: 2%;
+  /*border-style: solid;*/
 }
 
+.middleCopy{
+  width: 66.6%; 
+  margin: 0 auto;
+}
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .formCenter {
-  width: 50%;
+  width: 33%;
+  padding: 2%;
   margin: 0 auto;
   text-align: center;
+  border: 2px solid black;
+  border-radius: 25px;
 }
 
+.Fleft {
+  float: left;
+}
 
 .centertext {
-  padding-top: 2%;
-  width: 80%; 
+  /*padding-top: 2%;*/
+  /*width: 80%;*/ 
   /*height: 128px;*/ 
   margin: 0 auto;
 }

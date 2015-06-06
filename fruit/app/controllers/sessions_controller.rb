@@ -16,12 +16,12 @@ class SessionsController < ApplicationController
       # user.authenticate checks the supplied password vs the one in the database
       if user && user.authenticate(params[:password])
 
-        #save the user_id in the session has
+        #save the user_id in the session hash
         session[:user_id] = user.id
 
         #and redirect to that user's settings page
         #redirect_to "/users/:user_id/carts"
-        redirect_to "/users/:user_id/carts"
+        redirect_to "/users/#{user.id}/carts"
         # "/itineraries/#{params[:itinerary_id]}"
       else
         @message = "This email and password combination does not exist."

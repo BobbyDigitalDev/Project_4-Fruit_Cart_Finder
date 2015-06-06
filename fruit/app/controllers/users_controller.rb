@@ -23,7 +23,7 @@ class UsersController < ApplicationController
 
 
     if @user.save #saves the user if everything checks out
-      redirect_to "/" #this must route the user to their carts page COME BACK AND TWEAK
+      redirect_to "/users/#{user.id}/carts" #this must route the user to their carts page COME BACK AND TWEAK
 
     else
       render :new 

@@ -11,13 +11,14 @@
 
 </head>
 <body>
-<div class="right"><%= link_to "Log in", {:controller => 'sessions', :action => 'new'}%> | 
+<div class="right">
+<%= link_to "Log in", {:controller => 'sessions', :action => 'new'}%> | 
 <%= link_to "Sign up", {:controller => 'users', :action => 'new'}%>
 
 </div>
 
 <div class="logocentered">
-<%= image_tag "FruitFinder-logo.png", size: "300x135", alt: "Fruit Cart Finder Logo" %>
+<%= image_tag "FruitFinder-logo.png", size: "300x135", alt: "Fruit Cart Finder Logo", :class => "logo" %>
 
 </div>
 
