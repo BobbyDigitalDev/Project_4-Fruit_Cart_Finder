@@ -6,14 +6,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyAlHk9Jd5VRwhdBEFg8X4HgWXt3b0p15Pc&sensor=true" %>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlHk9Jd5VRwhdBEFg8X4HgWXt3b0p15Pc&sensor=false"></script> -->
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 
 </head>
 <body>
-<div class="right"><%= link_to "Log In", {:controller => 'sessions', :action => 'new'}%> | 
-<%= link_to "Log In", {:controller => 'users', :action => 'new'}%>
+<div class="right"><%= link_to "Log in", {:controller => 'sessions', :action => 'new'}%> | 
+<%= link_to "Sign up", {:controller => 'users', :action => 'new'}%>
 
 </div>
 

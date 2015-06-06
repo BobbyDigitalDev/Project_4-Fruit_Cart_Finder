@@ -7,6 +7,9 @@ class UsersController < ApplicationController
     render :new
   end
 
+  def show
+  end
+
   def create
     @user = User.new
     @user.name = params[:name]

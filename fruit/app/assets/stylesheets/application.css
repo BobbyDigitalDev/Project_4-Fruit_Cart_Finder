@@ -24,12 +24,27 @@ html, body {
   font-family: Arial, Helvetica, sans-serif; font-size: 1em; font-weight: 400;
 }
 
+/* #typography
+================================================== */
+h1 {font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 1.75em; font-weight: 700;}
+h2 {font-family: 'Lato', Arial, Helvetica, sans-serif; font-size: 1.5em; font-weight: 400;}
+h3 {font-family: 'Lato', Georgia, "Times New Roman", Times, serif;font-size: 3em;}
+h4 {}
+.tcenter {text-align: center;}
+
 .logocentered {
-  width: 333px; 
-  height: 128px; 
+  width: 300px; 
+  /*height: 128px;*/ 
   margin: 0 auto;
   padding-bottom: 2%;
 }
+
+.formCenter {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 .centertext {
   padding-top: 2%;

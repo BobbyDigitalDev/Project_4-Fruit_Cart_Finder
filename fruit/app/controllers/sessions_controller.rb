@@ -20,7 +20,9 @@ class SessionsController < ApplicationController
         session[:user_id] = user.id
 
         #and redirect to that user's settings page
-        redirect_to edit_users_path
+        #redirect_to "/users/:user_id/carts"
+        redirect_to "/users/:user_id/carts"
+        # "/itineraries/#{params[:itinerary_id]}"
       else
         @message = "This email and password combination does not exist."
         render :new
@@ -30,9 +32,9 @@ class SessionsController < ApplicationController
     def destroy
       # Setting session [:user_id] to nil will cause the authenticate method in 
       # our application controller to recognize that the user is not logged in
-      session[:user_id] = nil
+      # session[:user_id] = nil
 
-      redirect_to new_sessions_path
+      # redirect_to new_sessions_path
     end
 
 end
