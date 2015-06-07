@@ -3,4 +3,35 @@
 
 
 <div id="map"></div>
-<button>Add a new fruit cart</button>
+
+
+<form action="/carts" method="post">
+
+ <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token%>"/>
+
+ <label>
+   Description
+   <input type="text" name="Description"/>
+ </label>
+
+ <label>
+   Closest Address
+   <input type="text" name="Address"/>
+ </label>
+
+ <label>
+   City
+   <input type="integer" name="City"/>
+ </label>
+
+  <label>
+   State
+   <input type="integer" name="State"/>
+ </label>
+  <label>
+   Zip
+   <input type="integer" name="Zip"/>
+ </label>
+
+ <button>Save</button>
+</form>

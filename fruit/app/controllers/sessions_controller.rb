@@ -32,9 +32,10 @@ class SessionsController < ApplicationController
     def destroy
       # Setting session [:user_id] to nil will cause the authenticate method in 
       # our application controller to recognize that the user is not logged in
-      # session[:user_id] = nil
+      session[:user_id] = nil
 
       # redirect_to new_sessions_path
+      redirect_to "/"
     end
 
 end

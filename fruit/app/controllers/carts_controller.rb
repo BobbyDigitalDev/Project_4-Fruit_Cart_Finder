@@ -6,11 +6,17 @@ class CartsController < ApplicationController
       @carts = Cart.where({user_id: @user.id})
 
       render :index
+    else
+      redirect_to "/"
     end
   end
 
   def new
   end
+
+  def create
+  end
+
   
 
 
