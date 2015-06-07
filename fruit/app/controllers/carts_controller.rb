@@ -15,6 +15,22 @@ class CartsController < ApplicationController
   end
 
   def create
+    cartData = {}
+    cartData[:description] = params[:description]
+    cartData[:address] = params[:address]
+    cartData[:city] = params[:city]
+    cartData[:state] = params[:state]
+    cartData[:zip] = params[:zip]
+
+    cart = Cart.new(cartData)
+
+    cart.save
+
+    # redirect_to "/itineraries/#{params[:itinerary_id]}"
+    redirect_to "/users/#{params[:user_id]}/carts" #this route doesn't take us to the right user index's page but it does render a page
+    # redirect_to "/users/#{@user.id}/carts" #this doesn't work
+    # "/users/#{user.id}/carts"
+
   end
 
   
