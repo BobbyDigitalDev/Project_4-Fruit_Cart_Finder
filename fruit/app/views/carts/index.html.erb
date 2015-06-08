@@ -25,10 +25,20 @@
    <input type="text" name="city"/>
  </label>
 
-  <label>
+<!--   <label>
    State
    <input type="text" name="state"/>
- </label>
+ </label> -->
+
+ <label>State</label>
+  <select>
+  <% @states.each do |state| %>
+  <option name="state" value='<%= state.id %>'><%=state.name%></option>
+  <%end%>
+  </select>
+
+
+
   <label>
    Zip
    <input type="integer" name="zip"/>

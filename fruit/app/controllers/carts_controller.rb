@@ -3,8 +3,10 @@ class CartsController < ApplicationController
   def index
     if session[:user_id] != nil #user is logged on
       @user = User.find(session[:user_id])
+      puts @user.id
       @carts = Cart.where({user_id: @user.id})
 
+      @states = State.all
       render :index
     else
       redirect_to "/"
@@ -21,8 +23,11 @@ class CartsController < ApplicationController
     cartData[:city] = params[:city]
     cartData[:state] = params[:state]
     cartData[:zip] = params[:zip]
+    cartData[:user_id] = params[:user_id]
 
     cart = Cart.new(cartData)
+
+    binding.pry
 
     cart.save
 
@@ -32,9 +37,5 @@ class CartsController < ApplicationController
     # "/users/#{user.id}/carts"
 
   end
-
-  
-
-
 
 end
