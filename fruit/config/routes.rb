@@ -16,6 +16,8 @@ Rails.application.routes.draw do
     resources :carts
   end
 
+
+  #This route will gather up the carts to delivery json for the map
   get '/allcarts' => 'carts#allcarts'
 
   # The priority is based upon order of creation: first created -> highest priority.
