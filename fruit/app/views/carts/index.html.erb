@@ -31,9 +31,15 @@
  </label> -->
 
  <label>State</label>
-  <select>
+<!--   <select>
+  <% @states.each #do |state| %>
+  <option name="state_name" value='<%= state.name %>'><%=state.name%></option> -->
+
+
+  <select name="state">
   <% @states.each do |state| %>
-  <option name="state" value='<%= state.id %>'><%=state.name%></option>
+  <option value=<%=state.name %>> <%=state.name%></option>
+
   <%end%>
   </select>
 

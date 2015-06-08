@@ -16,12 +16,21 @@ class CartsController < ApplicationController
   def new
   end
 
+  def allcarts
+    #get carts by id.
+    #@cart = Cart.find(params[:user_id])
+    #@cart = Cart.find(session[:user_id])
+    #rener :json @cart
+    @all_carts = Cart.all 
+    render :json @all_carts
+  end
+
   def create
     cartData = {}
     cartData[:description] = params[:description]
     cartData[:address] = params[:address]
     cartData[:city] = params[:city]
-    cartData[:state] = params[:state]
+    cartData[:state] = params[:state_name]
     cartData[:zip] = params[:zip]
     cartData[:user_id] = params[:user_id]
 
