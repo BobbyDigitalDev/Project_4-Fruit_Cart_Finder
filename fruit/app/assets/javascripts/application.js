@@ -50,8 +50,8 @@ var initialize = function() {
   // create a new Google map with the options in the map element
    map = new google.maps.Map($('#map')[0], mapOptions);
 
-   var address = {address: ["140 tenth street"], city: "New York"}
-   geocode_address(map, "fritzyz", address)
+   // var address = {address: ["140 tenth street"], city: "New York"}
+   // geocode_address(map, "fritzyz", address)
 
   // var address2 = {address: ["10 east 21st Street"], city: "New York"}
   // geocode_address(map, "bobbys", address2)
@@ -68,11 +68,11 @@ var initialize = function() {
       // console.log(carts[i].city);
 
       var cartAddress = carts[i].address;
-      console.log(cartAddress);
+      // console.log(cartAddress);
       var cartCity = carts[i].city;
-      console.log(cartCity);
+      // console.log(cartCity);
       var cartDesc = carts[i].description;
-      console.log(cartDesc);
+      // console.log(cartDesc);
 
       var address = {address: [cartAddress], city: cartCity}
 
