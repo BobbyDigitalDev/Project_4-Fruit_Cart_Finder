@@ -50,7 +50,7 @@ Access to fresh fruits as healthy alternatives can be hard to find in a city ful
 |DELETE|('/carts/id')|Destroys a cart entry|
 
 ###ERD
-<img src="./images/Fruit_Cart_Finder_ERD-2.png">
+<img src="./images/Fruit_Cart_Finder_ERD-3.png">
 
 ###Tables
 
@@ -68,10 +68,3 @@ Access to fresh fruits as healthy alternatives can be hard to find in a city ful
 |1|My fav in the whole area. super friendly  vendor.|40.755313|-73.973238|517 Lexington Ave|N.Y.|New York|10017|1|
 |2|Always fresh. This guy is great.|40.768057|-73.985571|363 W 57th|N.Y.|New York|10019|2|
 |3|Freshest bananas on the west side.|40.769204|-73.988449|477 W 57th St|N.Y.|New York|10019|3|
-
-#### States Table
-|id|state_name|
-|---|---|
-|1|Alabama|
-|2|Alaska|
-|3|Arizona|
