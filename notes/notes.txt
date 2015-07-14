@@ -1,0 +1,51 @@
+Helpful reminders
+if you want to delete an id from a database, use this code
+DELETE FROM "carts" WHERE "carts"."id" = 5;
+
+state drop down box no longer needed.
+
+<form class="pure-form"action="/users/<%=@user.id%>/carts" method="POST">
+ <!-- <input name="_method" type="hidden" value="patch" /> -->
+ <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token%>"/>
+
+ <label>
+   Description
+   <input type="text" name="description"/>
+ </label>
+
+ <label>
+   Closest Address
+   <input type="text" name="address"/>
+ </label>
+
+ <label>
+   City
+   <input type="text" name="city"/>
+ </label>
+
+<!--   <label>
+   State
+   <input type="text" name="state"/>
+ </label> -->
+
+  <label>State</label>
+
+
+
+  <select name="state">
+  <% @states.each do |state| %>
+  <option value='<%=state.name%>'> <%=state.name%></option>
+
+  <%end%>
+  </select>
+
+
+
+  <label>
+   Zip
+   <input type="integer" name="zip"/>
+ </label>
+  <input type="hidden" name = "user_id" value= "<%=@user.id%>" />
+
+ <button>Save</button>
+</form>
