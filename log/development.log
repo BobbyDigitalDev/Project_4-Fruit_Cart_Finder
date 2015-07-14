@@ -20583,3 +20583,166 @@ Started GET "/allcarts" for ::1 at 2015-06-27 22:47:42 -0400
 Processing by CartsController#allcarts as */*
   [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
 Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 23:03:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (26.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 278ms (Views: 269.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-13 23:03:48 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-13 23:03:48 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-13 23:03:48 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-13 23:03:48 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-13 23:03:48 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-13 23:03:48 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-13 23:03:48 -0400
+
+
+Started GET "/assets/application.self-d3ae55fc2b5642e00e2fdfe36fb2373161de526a869af8af811d866e852f4c5a.js?body=1" for ::1 at 2015-07-13 23:03:48 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-13 23:03:48 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-13 23:03:48 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-13 23:03:48 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (24.0ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 54ms (Views: 16.2ms | ActiveRecord: 32.7ms)
+
+
+Started GET "/sessions/new" for ::1 at 2015-07-13 23:03:52 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-07-13 23:04:01 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N6aVSmTN6WFr/HYRLhJ0k0o2/BL1jFrYwJR+X6XkVT9dFsm5mG6YXOCfemVVmxsM2tXGQ8AZg6oWJZ/dfQoH0A==", "email"=>"bobby@bobby.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (17.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bobby@bobby.com"]]
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 137ms (Views: 34.8ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-13 23:04:05 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-13 23:04:20 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rH/itxiP5rhIgMxtqy9SaN/pIwaA+A1KIsrknWqEMsrGz75E5CyXhcPjwBnQpj33TwoZV7Vt1Dj0ewUfsmpgJQ==", "name"=>"bobby", "email"=>"bobby@bobby.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "commit"=>"Create Acccount"}
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "bobby"], ["email", "bobby@bobby.com"], ["password_digest", "$2a$10$Ba20Xe8Tf8ZBxsd2mDbWdOErXC1u.yGceJ5aztwaXiMzsdmcgGOaK"], ["created_at", "2015-07-14 03:04:20.074881"], ["updated_at", "2015-07-14 03:04:20.074881"]]
+  [1m[35m (0.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 69ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 23:04:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allcarts" for ::1 at 2015-07-13 23:04:20 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.3ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2015-07-13 23:04:24 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-07-13 23:04:32 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WXU13E63nkE+uCdcexcKYJ5GcZm6Ane+lurQe43oCTUzxWkvshTvfLXbKygAnmX/DqVLyI+XrsxAWzH5VQZb2g==", "email"=>"bobby@bobby.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bobby@bobby.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 87ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for ::1 at 2015-07-13 23:04:44 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4I6bMyfxP+oEoJ8h7t1uryj6/ILkwTy/5tW+g+XgkpuKPsfA21JO14/Dk1WVVAEwuBnG09FU5c0wZF8BPQ7AdA==", "email"=>"Bobby@bobby.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Bobby@bobby.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for ::1 at 2015-07-13 23:04:50 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-07-13 23:05:08 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bG9AVCbgzc4RtfglkgDRsxe6o2UOTvvX8ZlF5culo2sG3xyn2kO885rW9FHpib4sh1mZNDvbIqUnKKRnE0vxhA==", "name"=>"bobby", "email"=>"bobby@1234.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "commit"=>"Create Acccount"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "bobby"], ["email", "bobby@1234.com"], ["password_digest", "$2a$10$.uc9SbG2yhBjXNAsMNFLNuLUXDPgWSCFszK/pLnV48pDWkwx01ZJa"], ["created_at", "2015-07-14 03:05:08.803699"], ["updated_at", "2015-07-14 03:05:08.803699"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 63ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-13 23:05:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/allcarts" for ::1 at 2015-07-13 23:05:08 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sessions/new" for ::1 at 2015-07-13 23:05:11 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-07-13 23:05:18 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aV//Mpfx7fJR7gK2ZvyTeZVAOA6O0RSV3QERSy4UHWAD76PBa1Kcz9qNDsIddfzmBaMCX7tEzecLsPDJ9vpPjw==", "email"=>"bobby@1234.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bobby@1234.com"]]
+Redirected to http://localhost:3000/users/25/carts
+Completed 302 Found in 62ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/25/carts" for ::1 at 2015-07-13 23:05:19 -0400
+Processing by CartsController#index as HTML
+  Parameters: {"user_id"=>"25"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 25]]
+  Rendered carts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/allcarts" for ::1 at 2015-07-13 23:05:19 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.3ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
