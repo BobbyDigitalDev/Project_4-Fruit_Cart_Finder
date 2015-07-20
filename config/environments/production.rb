@@ -25,8 +25,13 @@ Rails.application.configure do
   config.serve_static_files = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
+  config.assets.compress = true
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
+
+  config.assets.precompile += %w(jquery.js jquery_ujs.js PIE.js check_list.js dom-drag.js jquery-1.4.2.min.js jquery-1.7.1.min.js jquery-1.8.3.js jquery-ui.js jquery.accordion.js jquery.corner.js jquery.countdown.js jquery.dimensions.js jquery.masonry.min.js jquery.tinycarousel.min.js jquery.validationEngine-en.js jquery.validationEngine.js questionnaire.js prototype.js users.js)
+
+     config.assets.precompile += %w(ie7.css ie8.css about_us.css admin_menu.css blog.css default.ultimate.css designer_directory.css designer_directorynew.css drop.css greenstore.css menu.css MenuMatic_dev.css message_view.css product.css setting1.css style1.css styles.css validationEngine.jquery.css)
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
