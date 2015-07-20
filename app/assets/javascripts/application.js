@@ -72,14 +72,18 @@ var initialize = function() {
       var cartCity = carts[i].city;
       // console.log(cartCity);
       var cartDesc = carts[i].description;
-      // console.log(cartDesc);
+      console.log("console.log cartDec " + typeof cartDesc);
 
       var address = {address: [cartAddress], city: cartCity}
+      console.log("this is the cartCity " + typeof cartCity);
+      console.log("this is the cartAddress " + typeof cartAddress);
+      console.log("these are the addresses " + typeof address);
 
     // var address = {address: ["140 tenth street"], city: "New York"}
 
    geocode_address(map, cartDesc, address)
-
+   // console.log("this is the geo coder console " +geocode_address);
+   // console.log("this is the map " + map);
     }
     // console.log(carts[0].description);//name
 
@@ -105,6 +109,7 @@ var geocode_address = function(map, name, location_object) {
     location_object['city'],
     // location_object['country_code']
   ].join(', ');
+  console.log("this is the mystery address " + address);
 
   // geocode the address and get the lat/lng
   geocoder.geocode({address: address}, function(results, status) {
@@ -117,6 +122,7 @@ var geocode_address = function(map, name, location_object) {
         position: results[0].geometry.location,
         title: name
       });
+      // console.log(position);
 
       // save the marker object so we can delete it later
       markersArray.push(marker);

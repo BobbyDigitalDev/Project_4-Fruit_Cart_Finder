@@ -20746,3 +20746,1615 @@ Started GET "/allcarts" for ::1 at 2015-07-13 23:05:19 -0400
 Processing by CartsController#allcarts as */*
   [1m[35mCart Load (0.3ms)[0m  SELECT "carts".* FROM "carts"
 Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-17 10:53:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (25.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 135ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-17 10:53:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-17 10:53:49 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-17 10:53:49 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-17 10:53:49 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-17 10:53:49 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-17 10:53:49 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-17 10:53:49 -0400
+
+
+Started GET "/assets/application.self-d3ae55fc2b5642e00e2fdfe36fb2373161de526a869af8af811d866e852f4c5a.js?body=1" for ::1 at 2015-07-17 10:53:49 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-17 10:53:49 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-17 10:53:49 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (25.0ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 49ms (Views: 13.5ms | ActiveRecord: 30.9ms)
+
+
+Started GET "/sessions/new" for ::1 at 2015-07-17 10:55:45 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-07-17 10:55:52 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RXkKR2d/fJIzqfaXN0jmfdJeWYN4KUa+UJelzclQs8nkxkC7eM0bSdzJSY+G/OFaI0qLISBm03LE4tFe8nAhcA==", "email"=>"Bobby@bobby.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (11.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "Bobby@bobby.com"]]
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 70ms (Views: 25.5ms | ActiveRecord: 12.2ms)
+
+
+Started POST "/sessions" for ::1 at 2015-07-17 10:55:59 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VG5wRRwndDnfnFuoJFOGaJ17gJQlBCKd4PC9GF154U310Tq5A5UT4jD85LCV54FPbG9SNn1Lt1F0hcmLZllz9A==", "email"=>"bobby@bobby.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bobby@bobby.com"]]
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 85ms (Views: 21.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/sessions" for ::1 at 2015-07-17 10:56:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Je5wOockETHfM68fYOVdJNIIN4VPP921u5MzycopQb6EUTrGmJZ26jBTEAfRUVoDIxzlJxdwSHkv5kda8QnTBw==", "email"=>"bobby@1234.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1[0m  [["email", "bobby@1234.com"]]
+Redirected to http://localhost:3000/users/25/carts
+Completed 302 Found in 63ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/25/carts" for ::1 at 2015-07-17 10:56:10 -0400
+Processing by CartsController#index as HTML
+  Parameters: {"user_id"=>"25"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 25]]
+  Rendered carts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/allcarts" for ::1 at 2015-07-17 10:56:10 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-17 11:17:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 26ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-17 11:17:50 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-17 11:17:50 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.3ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-17 13:54:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 103ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-17 13:54:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3d60fb90add2c3c40791c298785b40f98751e7594b5f378dca322bbbb3872897.js?body=1" for ::1 at 2015-07-17 13:54:55 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-17 13:54:55 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-17 13:54:55 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.3ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/new" for ::1 at 2015-07-17 13:55:21 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-07-17 13:55:26 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KKZREFrysnfF2fup6mk2AruqITd28Z8UxBthtqTuXC2JGRvsRUDVrCq5RLFb3TElSr7zlS6+CthQbhUln87OlA==", "email"=>"bobby@1234.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "bobby@1234.com"]]
+Redirected to http://localhost:3000/users/25/carts
+Completed 302 Found in 61ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/25/carts" for ::1 at 2015-07-17 13:55:26 -0400
+Processing by CartsController#index as HTML
+  Parameters: {"user_id"=>"25"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 25]]
+  Rendered carts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-17 13:55:26 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-17 13:55:26 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/25/carts" for ::1 at 2015-07-17 13:56:03 -0400
+Processing by CartsController#index as HTML
+  Parameters: {"user_id"=>"25"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 25]]
+  Rendered carts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-17 13:56:03 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-17 13:56:03 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-17 13:56:03 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-17 13:56:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-17 13:56:03 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-17 13:56:03 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-17 13:56:03 -0400
+
+
+Started GET "/assets/application.self-3d60fb90add2c3c40791c298785b40f98751e7594b5f378dca322bbbb3872897.js?body=1" for ::1 at 2015-07-17 13:56:03 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-17 13:56:03 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-17 13:56:03 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-17 13:56:03 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/25/carts" for ::1 at 2015-07-17 13:56:51 -0400
+Processing by CartsController#index as HTML
+  Parameters: {"user_id"=>"25"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 25]]
+  Rendered carts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-17 13:56:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-17 13:56:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-17 13:56:51 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-17 13:56:51 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-17 13:56:51 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-17 13:56:51 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-17 13:56:51 -0400
+
+
+Started GET "/assets/application.self-22ebec84b0c3f08a6e5cacebea183f6b4ccd2127d4882ac04f1f6a6bdb472ed3.js?body=1" for ::1 at 2015-07-17 13:56:51 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-17 13:56:51 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-17 13:56:51 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-17 13:56:51 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 12:09:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 219ms (Views: 209.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 12:09:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6aace98f580dd21c4ca4bc9f67e875cc74d8b9c78503a75086cdd931bc3b41ac.js?body=1" for ::1 at 2015-07-19 12:09:03 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 12:09:03 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 12:09:03 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (6.6ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 25ms (Views: 12.1ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 12:09:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 93ms (Views: 92.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 12:09:39 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 12:09:39 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 12:09:39 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 12:09:39 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 12:09:39 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 12:09:39 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 12:09:39 -0400
+
+
+Started GET "/assets/application.self-ee9fd2c233d589a9dde971bf0a446d1143680ec6ed01ac03969a894cec7bb933.js?body=1" for ::1 at 2015-07-19 12:09:39 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 12:09:39 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 12:09:39 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:20:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 147ms (Views: 139.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:20:44 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:20:44 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:20:44 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.6ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 21ms (Views: 8.6ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-19 14:27:21 -0400
+
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.9ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.6ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bobby/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (103.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:27:42 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:27:42 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:27:42 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.3ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:30:44 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 88ms (Views: 87.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7784e4fb67f03426efc8dddca97d71a7e0e8ab837a5411919a9483d24da50e30.js?body=1" for ::1 at 2015-07-19 14:30:44 -0400
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:30:44 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:30:44 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:30:44 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:30:44 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:30:44 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:30:44 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:30:44 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:30:44 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:30:44 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.3ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:33:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 87ms (Views: 86.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:33:27 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:33:27 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:33:27 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:33:27 -0400
+
+
+Started GET "/assets/application.self-e8869f0b81d4810bac2d7e050ba17e56e0cbe50766e6da7d638d1ee80bb6a1db.js?body=1" for ::1 at 2015-07-19 14:33:27 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:33:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:33:27 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:33:27 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:33:27 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:33:28 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:33:28 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:42:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 99ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:42:18 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:42:18 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:42:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:42:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:42:18 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:42:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:42:18 -0400
+
+
+Started GET "/assets/application.self-f34597e7ce811d6830e8ee8a7c52ad2f1e45a87451828fd801898c403f44e737.js?body=1" for ::1 at 2015-07-19 14:42:18 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:42:18 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:42:18 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:42:18 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:42:53 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:42:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:42:54 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:42:54 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:42:54 -0400
+
+
+Started GET "/assets/application.self-e62282b354ea7df8e05d8c923bc90f94b66d1819b1ec2adb69e66e300a022ed0.js?body=1" for ::1 at 2015-07-19 14:42:54 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:42:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:42:54 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:42:54 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:42:54 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:42:54 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:42:54 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:43:10 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:43:10 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:43:10 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:43:10 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:43:10 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:43:10 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:43:10 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:43:10 -0400
+
+
+Started GET "/assets/application.self-e62282b354ea7df8e05d8c923bc90f94b66d1819b1ec2adb69e66e300a022ed0.js?body=1" for ::1 at 2015-07-19 14:43:10 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:43:10 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:43:10 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:43:10 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:43:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:43:11 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:43:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:43:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:43:11 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:43:11 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:43:11 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:43:11 -0400
+
+
+Started GET "/assets/application.self-e62282b354ea7df8e05d8c923bc90f94b66d1819b1ec2adb69e66e300a022ed0.js?body=1" for ::1 at 2015-07-19 14:43:11 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:43:11 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:43:11 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:43:11 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:43:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:43:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:43:15 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:43:15 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:43:15 -0400
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:43:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:43:15 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:43:15 -0400
+
+
+Started GET "/assets/application.self-e62282b354ea7df8e05d8c923bc90f94b66d1819b1ec2adb69e66e300a022ed0.js?body=1" for ::1 at 2015-07-19 14:43:15 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:43:15 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:43:15 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:43:15 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.3ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:43:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:43:33 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:43:33 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:44:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 87ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:44:13 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:44:13 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:44:13 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:44:13 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:44:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:44:13 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:44:13 -0400
+
+
+Started GET "/assets/application.self-0ebb274ee62d15582337b47a39982f332e005e55ffdb29c1bc4f150a2d55cccc.js?body=1" for ::1 at 2015-07-19 14:44:13 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:44:13 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:44:14 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.3ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:44:46 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 101ms (Views: 100.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:44:46 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:44:46 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:44:46 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:44:46 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:44:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:44:46 -0400
+
+
+Started GET "/assets/application.self-ac6744371edfc47c2d9106b5126cfb3b5e38f52b899615440b1e9bf5271873bc.js?body=1" for ::1 at 2015-07-19 14:44:46 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:44:46 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:44:46 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:44:46 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:44:46 -0400
+
+
+Started GET "/" for ::1 at 2015-07-19 14:46:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:46:00 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:46:00 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:46:00 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:46:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:46:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:46:00 -0400
+
+
+Started GET "/assets/application.self-0181a9f1ba1346ea74e5e9b45fd2c9d8da247059eb85cdf14c31c2bb792a5fd4.js?body=1" for ::1 at 2015-07-19 14:46:00 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:46:00 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:46:00 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:46:00 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:46:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:46:21 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:46:21 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:46:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:46:45 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:46:45 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:46:45 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:46:45 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:46:45 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:46:45 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:46:45 -0400
+
+
+Started GET "/assets/application.self-9ab01f25f6215bdca388dc2b17dfcaa288f8c6d5eb4ed5c995be381f69a09b99.js?body=1" for ::1 at 2015-07-19 14:46:45 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:46:45 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:46:46 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:46:46 -0400
+
+
+Started GET "/" for ::1 at 2015-07-19 14:46:59 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 14:47:00 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:47:00 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.3ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:47:30 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 77ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:47:30 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:47:30 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:47:30 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:47:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:47:30 -0400
+
+
+Started GET "/assets/application.self-b54dbee39ce31cf0bd2836df3e587f061cee93e3594bf44897265adf1a9869f5.js?body=1" for ::1 at 2015-07-19 14:47:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:47:30 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:47:30 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:47:30 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:47:30 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:51:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:51:51 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:51:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:51:51 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:51:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:51:51 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:51:51 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:51:51 -0400
+
+
+Started GET "/assets/application.self-3db06d66fe361ba4caa8e7e632c4752497190512cc71cd8df03704843cdfacbf.js?body=1" for ::1 at 2015-07-19 14:51:51 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:51:51 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:51:51 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.3ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:53:06 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 87ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:53:06 -0400
+
+
+Started GET "/assets/application.self-9de25e149bb33964eb3f992b68bade6152d4309c8ba1fc3186e160aa36ec6426.js?body=1" for ::1 at 2015-07-19 14:53:06 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:53:06 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:53:06 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:53:06 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:53:06 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:53:06 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:53:06 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:53:06 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:53:06 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:53:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 71ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:53:57 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:53:57 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:53:57 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:53:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:53:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:53:57 -0400
+
+
+Started GET "/assets/application.self-f427bca6326fd7e68b472891c45d8765a0588b5c845847b8fe1352776a051c96.js?body=1" for ::1 at 2015-07-19 14:53:57 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:53:57 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:53:57 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:53:57 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:56:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 82ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:56:00 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:56:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:56:00 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:56:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:56:00 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:56:00 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:56:00 -0400
+
+
+Started GET "/assets/application.self-c7b201332ca809fe21ec50f957e7e517375f34a6f1512733b386806d97e853d2.js?body=1" for ::1 at 2015-07-19 14:56:00 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:56:00 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:56:00 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 14:57:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 14:57:23 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 14:57:23 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 14:57:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 14:57:23 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 14:57:23 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 14:57:23 -0400
+
+
+Started GET "/assets/application.self-7882320caf9e7c4093acfd86d55c7f9a4529d86a92e847c7c30507f5c7574ecc.js?body=1" for ::1 at 2015-07-19 14:57:23 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 14:57:23 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 14:57:23 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 14:57:23 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 15:00:10 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 75ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 15:00:10 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 15:00:10 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 15:00:10 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 15:00:10 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 15:00:10 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 15:00:10 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 15:00:10 -0400
+
+
+Started GET "/assets/application.self-c98a8f53291e0677efe75eaa64e337c70636f4971090b343581de0d97f8ce953.js?body=1" for ::1 at 2015-07-19 15:00:10 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 15:00:10 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 15:00:10 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.3ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 15:01:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 15:01:17 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 15:01:17 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 15:01:17 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 15:01:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 15:01:17 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 15:01:17 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 15:01:17 -0400
+
+
+Started GET "/assets/application.self-7882320caf9e7c4093acfd86d55c7f9a4529d86a92e847c7c30507f5c7574ecc.js?body=1" for ::1 at 2015-07-19 15:01:17 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 15:01:17 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 15:01:17 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 15:01:17 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 15:16:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 77ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 15:16:11 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 15:16:11 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 15:16:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 15:16:11 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 15:16:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 15:16:11 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 15:16:11 -0400
+
+
+Started GET "/assets/application.self-d92f0e8e0171a9e538fb7b7f285124a579a8b8a4f9559f698fe1c735ef9b1177.js?body=1" for ::1 at 2015-07-19 15:16:11 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 15:16:11 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 15:16:11 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 15:16:11 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 15:24:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 77ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-44fcf4859e0e391186166c93f2e95a98e14942912a017ca1258d54ebb0f4e978.js?body=1" for ::1 at 2015-07-19 15:24:11 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 15:24:11 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 15:24:11 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.3ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 15:24:16 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 15:24:16 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 15:24:16 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.3ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 15:24:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 74ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1bc4e353f2fde400bf288e3b98f205043cab1e229cb80363f55c138ff86b74b0.js?body=1" for ::1 at 2015-07-19 15:24:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 15:24:57 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 15:24:57 -0400
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 15:24:57 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 15:24:57 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 15:24:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 15:24:57 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 15:24:57 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 15:24:57 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 15:24:57 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.3ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 15:32:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 75ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 15:32:23 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 15:32:23 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 15:32:23 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 15:32:23 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 15:32:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 15:32:23 -0400
+
+
+Started GET "/assets/application.self-360f5c9cdecd8e12e8a04cdeb408c4f8e35328cc02bf79afd008c5992c807ef9.js?body=1" for ::1 at 2015-07-19 15:32:23 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 15:32:23 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 15:32:23 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 15:32:23 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.2ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 15:33:06 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/assets/application.self-1bc4e353f2fde400bf288e3b98f205043cab1e229cb80363f55c138ff86b74b0.js?body=1" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 15:33:07 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 15:33:07 -0400
+
+
+Started GET "/" for ::1 at 2015-07-19 15:33:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 15:33:24 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 15:33:24 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 15:33:24 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 15:33:24 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 15:33:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 15:33:24 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 15:33:24 -0400
+
+
+Started GET "/assets/application.self-db10765fb9fb2fa45b6ea5043d3084ebf08c16bf3a2243a0a408bada96d6122a.js?body=1" for ::1 at 2015-07-19 15:33:24 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 15:33:24 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 15:33:24 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-19 15:33:24 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (0.8ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-19 15:45:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 82ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b230249ca61362a4953a1d17ae2c7df1f1d8a9743b001ac4f4e1fcfa40591cbc.js?body=1" for ::1 at 2015-07-19 15:45:49 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-19 15:45:49 -0400
+
+
+Started GET "/" for ::1 at 2015-07-19 15:47:41 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 92ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 15:47:41 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 15:47:41 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 15:47:41 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 15:47:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 15:47:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 15:47:41 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 15:47:41 -0400
+
+
+Started GET "/assets/application.self-5f200c3838de6a686e889d193c878dfdcd577239982c73d6578f006ccf78fb9d.js?body=1" for ::1 at 2015-07-19 15:47:41 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 15:47:41 -0400
+
+
+Started GET "/" for ::1 at 2015-07-19 15:48:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 15:48:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 15:48:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 15:48:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 15:48:18 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 15:48:18 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 15:48:18 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 15:48:18 -0400
+
+
+Started GET "/assets/application.self-695920fbf20c37a83fe4886c466f95799be257aa23a8d099d513c6fdf0a30129.js?body=1" for ::1 at 2015-07-19 15:48:18 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 15:48:18 -0400
+
+
+Started GET "/" for ::1 at 2015-07-19 16:13:43 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 115ms (Views: 115.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8a4009a609d6fc109b1c77c046b711a6499eae6254597e879387236e46074f10.js?body=1" for ::1 at 2015-07-19 16:13:43 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-19 16:13:43 -0400
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-19 16:13:43 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-19 16:13:43 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-19 16:13:43 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-19 16:13:43 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-19 16:13:43 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-19 16:13:43 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-19 16:13:43 -0400
+
+
+Started GET "/" for ::1 at 2015-07-20 09:24:36 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 196ms (Views: 192.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c54aba8441ab085d6200be97453b8142783acd353e20102e13d0d5933d176f9e.js?body=1" for ::1 at 2015-07-20 09:24:37 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-20 09:24:37 -0400
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-20 09:24:37 -0400
+
+
+Started GET "/assets/application.self-5c7c44a0b0f401714140251040be83030b802434a66fbc4b510a7ff4dc7d84d0.css?body=1" for ::1 at 2015-07-20 09:24:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-20 09:24:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-20 09:24:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-20 09:24:37 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-20 09:24:37 -0400
+
+
+Started GET "/assets/FruitFinder-logo-cdbbc98b324ee681d05f0aa0a8bdfbfac7e7a551fe2a9ebfd0194590a722584e.png" for ::1 at 2015-07-20 09:24:37 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-20 09:24:38 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (1.1ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-07-20 14:57:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (6.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 138ms (Views: 130.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a3c19873cf8fc959a2e5fadf2954f17aec706642237f25409ab5478bc27506d6.css?body=1" for ::1 at 2015-07-20 14:57:50 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-20 14:57:50 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-20 14:57:50 -0400
+Processing by CartsController#allcarts as */*
+  [1m[35mCart Load (1.7ms)[0m  SELECT "carts".* FROM "carts"
+Completed 200 OK in 15ms (Views: 7.9ms | ActiveRecord: 3.9ms)
