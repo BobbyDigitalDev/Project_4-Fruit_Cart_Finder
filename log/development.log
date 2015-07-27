@@ -22377,3 +22377,42 @@ Started GET "/allcarts" for ::1 at 2015-07-27 13:16:33 -0400
 Processing by CartsController#allcarts as */*
   [1m[35mCart Load (22.6ms)[0m  SELECT "carts".* FROM "carts"
 Completed 200 OK in 41ms (Views: 8.9ms | ActiveRecord: 28.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-27 13:31:26 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b53b6062139c30d395d8b4f32c7cc180ecea651966613cbc891deec920a1477c.css?body=1" for ::1 at 2015-07-27 13:31:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-27 13:31:26 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-27 13:31:26 -0400
+
+
+Started GET "/assets/forms.self-09bd600376fea03507aed51ea84a26eb682b29f7d4622d91a4391cc9c4818dc1.css?body=1" for ::1 at 2015-07-27 13:31:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-07-27 13:31:26 -0400
+
+
+Started GET "/assets/mustache.self-c6c147b5f945e51d8bd77649f247fe63618d4ab9b94add300d32db1a0d642a51.js?body=1" for ::1 at 2015-07-27 13:31:26 -0400
+
+
+Started GET "/assets/normalize.self-d5ea698602f0ff8f924905fb7988daac5a4944531d1baf5319266ba612a16d6a.css?body=1" for ::1 at 2015-07-27 13:31:26 -0400
+
+
+Started GET "/assets/application.self-c54aba8441ab085d6200be97453b8142783acd353e20102e13d0d5933d176f9e.js?body=1" for ::1 at 2015-07-27 13:31:26 -0400
+
+
+Started GET "/assets/fruit.jpg" for ::1 at 2015-07-27 13:31:26 -0400
+
+
+Started GET "/allcarts" for ::1 at 2015-07-27 13:31:26 -0400
+Processing by CartsController#allcarts as */*
+  [1m[36mCart Load (0.2ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
