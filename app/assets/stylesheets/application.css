@@ -14,6 +14,9 @@
  *= require_self
  */
 
+ @import url(https://fonts.googleapis.com/css?family=Lato);
+ @import url(https://fonts.googleapis.com/css?family=Lobster);
+
 html, body {
   height: 100%;
   width: 100%;
